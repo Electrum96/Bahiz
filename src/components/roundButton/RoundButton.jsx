@@ -8,11 +8,12 @@ const RoundButton = ({size}) => {
 
 const styles = useStyleRoundButton();
     return (
-        <View style={styles.button}>
             <TouchableOpacity>
+                <View style={styles.button}>
                 <FontAwesomeIcon icon={'shopping-cart'} color={'white'} size={size}/>
+                </View>
             </TouchableOpacity>   
-        </View>
+    
     )
 }
 

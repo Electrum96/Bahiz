@@ -6,7 +6,8 @@ function useStyleRoundButton () {
         button: {
             backgroundColor: COLORS.accentBg,
             borderRadius: 30,
-            padding: 15
+            padding: 15,
+            alignContent: 'center'
         }
     });
 

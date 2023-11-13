@@ -6,14 +6,16 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import RoundButton from '../roundButton/RoundButton';
 
-const Header = () => {
-  const styles = useStyleHeader();
+const Header = ({navigation}) => {
+
+  const styles = useStyleHeader;
+
   return (
     <View style={styles.headerWrap}>
       <TouchableOpacity>
-        <FontAwesomeIcon />
+        <FontAwesomeIcon icon={'bars'} size={20} color={'grey'}/>
       </TouchableOpacity>
-      <RoundButton />
+      <RoundButton size={20}/>
     </View>
   );
 };
