@@ -5,8 +5,8 @@ function useStyleRoundButton () {
     const styles = StyleSheet.create({
         button: {
             backgroundColor: COLORS.accentBg,
-            borderRadius: 25,
-            padding: 10
+            borderRadius: 30,
+            padding: 15
         }
     });
 

@@ -5,18 +5,20 @@ import useStyleMenuApp from './useStyleMenuApp';
 import RoundButton from '../../components/roundButton/RoundButton';
 import PagesList from '../../components/pagesList/PagesList';
 
-const MenuApp = () => {
+const MenuApp = ({navigation}) => {
   const styles = useStyleMenuApp();
   return (
     <View style={styles.menuWrapper}>
       <View>
         <Image style={styles.image} source={require('../../image/Brand.png')} />
       </View>
+
       <View>
-        <PagesList />
+        <PagesList navigation={navigation}/>
       </View>
+
       <View>
-        <RoundButton size={30} />
+        <RoundButton size={40} />
       </View>
     </View>
   );

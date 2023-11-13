@@ -5,7 +5,7 @@ function useStylePageItem () {
     const styles = StyleSheet.create({
         tabWrap:{
             padding: 10,
-            borderBlockColor: COLORS.accentBg,
+            borderColor: COLORS.accentBg,
             borderWidth: 2,
             borderRadius: 5,
             width: 220
@@ -13,7 +13,8 @@ function useStylePageItem () {
         title: {
             fontSize: 20,
             fontWeight: '600',
-            textAlign: 'center'
+            textAlign: 'center',
+            color: COLORS.dark
         }
     });
 

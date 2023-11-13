@@ -3,9 +3,10 @@ import {StyleSheet} from 'react-native';
 function useStyleMenuApp () {
     const styles = StyleSheet.create({
         menuWrapper: {
+            height: '65%',
             alignItems: 'center',
             justifyContent: 'space-between',
-            marginVertical: 20
+            marginVertical: 30
 
         },
         image: {
