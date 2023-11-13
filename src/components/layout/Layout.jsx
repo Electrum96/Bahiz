@@ -5,21 +5,20 @@ import Container from '../container/Container';
 import Header from '../header/Header';
 
 const Layout = ({children, navigation}) => {
+  const styles = useStyleLayout();
+  return (
+    <View style={styles.layoutWrap}>
+     
+        <Header navigation={navigation} />
+    
 
-const styles = useStyleLayout();
-    return (
-        <View>
-            <Container>
-                <Header navigation={navigation}/>
-            </Container>
+      <View style={styles.bgc}><Container>{children}</Container></View>
 
-            <View>
-                <Container>
-                    {children}
-                </Container>
-            </View>
-        </View>
-    )
-}
+      <View style={styles.footer}>
+        <Text>text</Text>
+      </View>
+    </View>
+  );
+};
 
 export default Layout;

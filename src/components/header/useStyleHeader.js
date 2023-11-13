@@ -1,16 +1,17 @@
 import {StyleSheet} from 'react-native';
-import { COLORS } from '../../styles/variables';
+import {COLORS} from '../../styles/variables';
 
 const styles = StyleSheet.create({
-    headerWrap:{
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-        backgroundColor: COLORS.accent,
-        width: '100%',
-        alignItems: "center",
-        marginTop: 20
-    }
-    
+  headerWrap: {
+    backgroundColor: COLORS.accent,
+  },
+  iconBox: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 20,
+    width: '100%',
+  },
 });
 
 export default styles;

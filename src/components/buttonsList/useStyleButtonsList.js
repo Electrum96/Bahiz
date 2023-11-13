@@ -4,7 +4,8 @@ function useStyleButtonsList () {
     const styles = StyleSheet.create({
         buttonsWrap:{
             flexDirection:"row",
-            gap: 10
+            gap: 10,
+            marginVertical: 20
         }
         
     });

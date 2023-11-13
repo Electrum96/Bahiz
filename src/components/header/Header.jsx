@@ -5,17 +5,21 @@ import useStyleHeader from './useStyleHeader';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import RoundButton from '../roundButton/RoundButton';
+import Container from '../container/Container';
 
 const Header = ({navigation}) => {
-
   const styles = useStyleHeader;
 
   return (
     <View style={styles.headerWrap}>
-      <TouchableOpacity>
-        <FontAwesomeIcon icon={'bars'} size={20} color={'grey'}/>
-      </TouchableOpacity>
-      <RoundButton size={20}/>
+      <Container>
+        <View style={styles.iconBox}>
+          <TouchableOpacity>
+            <FontAwesomeIcon icon={'bars'} size={30} color={'grey'} />
+          </TouchableOpacity>
+          <RoundButton size={20} />
+        </View>
+      </Container>
     </View>
   );
 };

@@ -4,7 +4,8 @@ import { COLORS } from '../../styles/variables';
 function useStyleButtonItem () {
     const styles = StyleSheet.create({
         itemWrap: {
-            width: '20%',
+            width: 100,
+            height: 80,
             borderColor: COLORS.accentBg ,
             borderRadius: 5,
             borderWidth: 1,

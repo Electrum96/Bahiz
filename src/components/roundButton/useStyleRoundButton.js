@@ -7,7 +7,8 @@ function useStyleRoundButton () {
             backgroundColor: COLORS.accentBg,
             borderRadius: 30,
             padding: 15,
-            alignContent: 'center'
+            alignContent: 'center',
+            
         }
     });
 
