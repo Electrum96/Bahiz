@@ -2,14 +2,24 @@ import {Text, View, Image} from 'react-native';
 
 import useStyleMenuApp from './useStyleMenuApp';
 
-const MenuApp = () => {
+import RoundButton from '../../components/roundButton/RoundButton';
+import PagesList from '../../components/pagesList/PagesList';
 
-const styles = useStyleMenuApp();
-    return (
-        <View>
-            <Text>MenuApp</Text>
-        </View>
-    )
-}
+const MenuApp = () => {
+  const styles = useStyleMenuApp();
+  return (
+    <View style={styles.menuWrapper}>
+      <View>
+        <Image style={styles.image} source={require('../../image/Brand.png')} />
+      </View>
+      <View>
+        <PagesList />
+      </View>
+      <View>
+        <RoundButton size={30} />
+      </View>
+    </View>
+  );
+};
 
 export default MenuApp;
