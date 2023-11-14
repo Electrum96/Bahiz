@@ -9,15 +9,10 @@ const Layout = ({children, navigation}) => {
   const styles = useStyleLayout();
   return (
     <View style={styles.layoutWrap}>
-     
-        <Header navigation={navigation} />
-    
+      <Header navigation={navigation} />
 
-      <View style={styles.bgc}><Container>{children}</Container></View>
-
-      <View style={styles.footer}>
+      <View style={styles.bgc}>
         <Container>{children}</Container>
-        <Text>text</Text>
       </View>
     </View>
   );
