@@ -6,12 +6,11 @@ import Layout from '../../components/layout/Layout';
 
 import ButtonsList from '../../components/buttonsList/ButtonsList';
 import FoodList from '../../components/foodList/FoodList';
-import Container from '../../components/container/Container';
 
-const Foods = () => {
+const Foods = ({navigation}) => {
   const styles = useStyleFoods();
   return (
-    <Layout>
+    <Layout navigation={navigation}>
       <View style={styles.mainWrap}>
         <Text style={styles.title}>Categories</Text>
 
@@ -20,7 +19,7 @@ const Foods = () => {
         </View>
 
         <View style={styles.listBox}>
-            <FoodList />
+            <FoodList navigation={navigation} />
         </View>
 
 

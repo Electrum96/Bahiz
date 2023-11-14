@@ -5,7 +5,7 @@ import useStyleFoodList from './useStyleFoodList';
 import FoodItem from '../foodItem/FoodItem';
 import products from '../../data/foodList/products';
 
-const FoodList = () => {
+const FoodList = ({navigation}) => {
   const styles = useStyleFoodList();
   return (
     <ScrollView>
@@ -17,6 +17,7 @@ const FoodList = () => {
             image={item.image}
             title={item.title}
             price={item.price}
+            navigation={navigation}
           />
         ))}
       </View>

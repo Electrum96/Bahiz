@@ -1,10 +1,11 @@
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, TouchableOpacity} from 'react-native';
 
 import useStyleFoodItem from './useStyleFoodItem';
 
-const FoodItem = ({image, title, price}) => {
+const FoodItem = ({navigation,image, title, price}) => {
   const styles = useStyleFoodItem();
   return (
+    <TouchableOpacity onPress={() => navigation.push('FoodCard')}>
     <View style={styles.itemWrap}>
       <Image style={styles.image} source={image} />
       <View style={styles.infoWrap}>
@@ -13,6 +14,7 @@ const FoodItem = ({image, title, price}) => {
       <Text style={styles.price}>{price}</Text>
       </View>
     </View>
+    </TouchableOpacity>
   );
 };
 

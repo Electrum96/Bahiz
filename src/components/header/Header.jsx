@@ -14,10 +14,10 @@ const Header = ({navigation}) => {
     <View style={styles.headerWrap}>
       <Container>
         <View style={styles.iconBox}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.push('MenuApp')}>
             <FontAwesomeIcon icon={'bars'} size={30} color={'grey'} />
           </TouchableOpacity>
-          <RoundButton size={20} />
+          <RoundButton navigation={navigation} size={20} />
         </View>
       </Container>
     </View>
