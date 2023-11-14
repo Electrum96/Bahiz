@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import useStyleFoodCard from './useStyleFoodCard';
 
 import Layout from '../../components/layout/Layout';
+import Counter from '../../components/counter/Counter';
 
 
 const FoodCard = ({navigation}) => {
@@ -21,14 +22,13 @@ const FoodCard = ({navigation}) => {
               <Text style={styles.title}>Английский Завтрак</Text>
               <Text style={styles.desc}>Яйца, соус чеддар, фасоль, шпинат</Text>
             </View>
-            <Text>counter</Text>
-            <Text></Text>
+            <Counter/>
           </View>
         </View>
 
         <View style={styles.footer}>
           <View style={styles.priceWrap}>
-            <Text style={styles.price}>30</Text>
+            <Text style={styles.price}>$30</Text>
           </View>
 
          <TouchableOpacity style={styles.buttonWrap}>

@@ -44,7 +44,7 @@ function useStyleFoodCard() {
     },
     buttonWrap:{
         backgroundColor: COLORS.accentBg,
-        width: '40%',
+        width: '50%',
         alignItems: 'center',
         justifyContent: 'space-between',
         flexDirection: 'row',
@@ -60,6 +60,14 @@ function useStyleFoodCard() {
     titleButton:{
         color: COLORS.light,
         fontWeight: '600'
+    },
+    blockInfo: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        gap: 20
+    },
+    description:{
+        width: '60%'
     }
   });
 
