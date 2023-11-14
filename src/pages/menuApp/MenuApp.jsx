@@ -18,7 +18,7 @@ const MenuApp = ({navigation}) => {
       </View>
 
       <View>
-        <RoundButton size={40} />
+        <RoundButton navigation={navigation} size={40} />
       </View>
     </View>
   );
