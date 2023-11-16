@@ -22,6 +22,12 @@ class ProductSlice {
     item.count += 1;
   };
 
+  findProduct = (id) => {
+    const product = this.productListAll.find(product => product.id === id);
+
+    return product ? true : false;
+  };
+
 
   get basketList() {
     return this.productListAll.filter(product => product.inBasket === true);
