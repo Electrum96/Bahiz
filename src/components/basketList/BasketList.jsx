@@ -3,12 +3,12 @@ import {Text, View, Image} from 'react-native';
 import useStyleBasketList from './useStyleBasketList';
 import BasketItem from '../basketItem/BasketItem';
 
-const BasketList = () => {
+const BasketList = ({basketList}) => {
 
 const styles = useStyleBasketList();
     return (
         <View style={styles.list}>
-            <BasketItem/>
+           {basketList.map((item) => <BasketItem key={item.id} {...item} />) }
         </View>
     )
 }

@@ -8,13 +8,16 @@ import EmptyBasket from '../emptyBasket/EmptyBasket';
 import Container from '../../components/container/Container';
 import BasketList from '../../components/basketList/BasketList';
 
+import productsSlice from '../../store/productsSlice';
+
 const Basket = ({navigation}) => {
   const styles = useStyleBasket();
+  const {basketList} = productsSlice;
   if (true) {
     return (
       <Layout navigation={navigation}>
         <View style={styles.page}>
-          <BasketList />
+          <BasketList basketList={basketList}/>
         </View>
         <Container>
           <View style={styles.informWrap}>

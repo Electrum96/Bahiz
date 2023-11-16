@@ -6,9 +6,15 @@ class ProductSlice {
     }
 
     productListAll = products;
+    
 
     addBasket = id => {
-        this.productListAll.find((product) => product.id === id);
+        const item = this.productListAll.find((product) => product.id === id);
+        item.inBasket = true;  
+    }
+
+    get basketList() {
+        return this.productListAll.filter((product) => product.inBasket === true);
     }
 }
 
