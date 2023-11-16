@@ -12,7 +12,7 @@ class ProductSlice {
     item.inBasket = true;
   };
 
-  decrement = id => {
+  decrement = ( id) => {
     const item = this.productListAll.find(product => product.id === id);
     item.count -= 1;
   };

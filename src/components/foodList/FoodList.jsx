@@ -17,7 +17,6 @@ const FoodList = ({navigation, route}) => {
             key={item.id}
             {...item}
             navigation={navigation}
-            route={route}
           />
         ))}
       </View>

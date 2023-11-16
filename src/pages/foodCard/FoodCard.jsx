@@ -18,14 +18,7 @@ const FoodCard = ({route, navigation}) => {
   const {addBasket, productListAll, findProduct} = productsSlice;
 
   const foodData = productListAll.find(el => el.id === id);
-  const {image, title, desc, count, price} = foodData;
-
-  const [isBasket, setIsBasket] = React.useState(findProduct(id));
-
-  const handler = () => {
-    addBasket(id);
-    setIsBasket(!isBasket);
-  };
+  const {image, title, desc, count, price,} = foodData;
 
   return (
     <Layout navigation={navigation}>
@@ -46,8 +39,8 @@ const FoodCard = ({route, navigation}) => {
             <Text style={styles.price}>{'$ ' + price * count}</Text>
           </View>
 
-          <TouchableOpacity style={styles.buttonWrap} onPress={handler}>
-            <Text style={styles.titleButton}>{isBasket ? 'da' : 'net'}</Text>
+          <TouchableOpacity style={styles.buttonWrap} onPress={() => addBasket(id)}>
+            <Text style={styles.titleButton}>{'text'}</Text>
             <View style={styles.iconWrap}>
               <FontAwesomeIcon icon={'shopping-cart'} color="red" size={15} />
             </View>
