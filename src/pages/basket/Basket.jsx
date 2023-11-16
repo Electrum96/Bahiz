@@ -10,9 +10,11 @@ import BasketList from '../../components/basketList/BasketList';
 
 import productsSlice from '../../store/productsSlice';
 
+import { observer } from 'mobx-react-lite';
+
 const Basket = ({navigation}) => {
   const styles = useStyleBasket();
-  const {basketList} = productsSlice;
+  const {basketList, totalPrice} = productsSlice;
   if (true) {
     return (
       <Layout navigation={navigation}>
@@ -22,7 +24,7 @@ const Basket = ({navigation}) => {
         <Container>
           <View style={styles.informWrap}>
             <Text style={styles.total}>Total</Text>
-            <Text style={styles.sum}>sum</Text>
+            <Text style={styles.sum}>{'$ ' + totalPrice}</Text>
           </View>
         </Container>
         <FooterButton
@@ -36,4 +38,4 @@ const Basket = ({navigation}) => {
   }
 };
 
-export default Basket;
+export default observer(Basket);

@@ -15,7 +15,7 @@ const FoodCard = ({route, navigation}) => {
   const styles = useStyleFoodCard();
   const {id} = route.params;
 
-  const {addBasket, productListAll} = productsSlice;
+  const {addBasket, productListAll, increment, decrement} = productsSlice;
 
   const foodData = productListAll.find(el => el.id === id);
   const {image, title, desc, count, price, inBasket} = foodData;
@@ -39,13 +39,13 @@ const FoodCard = ({route, navigation}) => {
 
         <View style={styles.footer}>
           <View style={styles.priceWrap}>
-            <Text style={styles.price}>{'$ ' + price}</Text>
+            <Text style={styles.price}>{'$ ' + (price * count)}</Text>
           </View>
 
           <TouchableOpacity
             style={styles.buttonWrap}
             onPress={() => addBasket(id)}>
-            <Text style={styles.titleButton}>{inBasket ? 'Check in' : 'Added'}</Text>
+            <Text style={styles.titleButton}>{foodData.inBasket ? 'da' : 'net'}</Text>
             <View style={styles.iconWrap}>
               <FontAwesomeIcon icon={'shopping-cart'} color="red" size={15} />
             </View>

@@ -4,7 +4,10 @@ import useStyleBasketItem from './useStyleBasketItem';
 
 import Counter from '../counter/Counter';
 
-const BasketItem = ({image, title, price}) => {
+
+
+const BasketItem = ({image, title, price, id, count}) => {
+  
   const styles = useStyleBasketItem();
   return (
     <View style={styles.pages}>
@@ -16,11 +19,11 @@ const BasketItem = ({image, title, price}) => {
       <View style={styles.informWrap}>
         <View>
           <Text style={styles.title}>{title}</Text>
-          <Text style={styles.price}>{price}</Text>
+          <Text style={styles.price}>{price * count}</Text>
         </View>
 
         <View style={styles.counter}>
-          <Counter />
+          <Counter id = {id} count={count}/>
         </View>
       </View>
       
