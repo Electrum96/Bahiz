@@ -7,19 +7,15 @@ import productsSlice from '../../store/productsSlice';
 
 const FoodList = ({navigation, route}) => {
   const styles = useStyleFoodList();
-  const products = productsSlice.productListAll;
+  const {productListAll} = productsSlice;
   return (
     <ScrollView>
       <Text style={styles.title}>Name Category</Text>
       <View style={styles.listWrap}>
-        {products.map((item) => (
+        {productListAll.map((item) => (
           <FoodItem
             key={item.id}
-            image={item.image}
-            title={item.title}
-            price={item.price}
-            desc={item.desc}
-            id = {item.id}
+            {...item}
             navigation={navigation}
             route={route}
           />

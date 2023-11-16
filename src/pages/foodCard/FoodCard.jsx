@@ -10,7 +10,7 @@ import productsSlice from '../../store/productsSlice';
 
 const FoodCard = ({route, navigation}) => {
   const styles = useStyleFoodCard();
-  const {image, title, price, descr, id} = route.params;
+  const {image, title, price, desc, id} = route.params;
   const {addBasket} = productsSlice;
 
   return (
@@ -24,7 +24,7 @@ const FoodCard = ({route, navigation}) => {
           <View style={styles.blockInfo}>
             <View style={styles.description}>
               <Text style={styles.title}>{title}</Text>
-              <Text style={styles.desc}>{descr}</Text>
+              <Text style={styles.desc}>{desc}</Text>
             </View>
             <Counter/>
           </View>
