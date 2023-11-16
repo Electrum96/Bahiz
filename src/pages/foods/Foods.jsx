@@ -7,7 +7,7 @@ import Layout from '../../components/layout/Layout';
 import ButtonsList from '../../components/buttonsList/ButtonsList';
 import FoodList from '../../components/foodList/FoodList';
 
-const Foods = ({navigation}) => {
+const Foods = ({route, navigation}) => {
   const styles = useStyleFoods();
   return (
     <Layout navigation={navigation}>
@@ -19,7 +19,7 @@ const Foods = ({navigation}) => {
         </View>
 
         <View style={styles.listBox}>
-            <FoodList navigation={navigation} />
+            <FoodList route={route} navigation={navigation} />
         </View>
 
 

@@ -6,6 +6,7 @@ let products = [
     image: require('../../image/Pizza/Mexica.png'),
     weight: 485,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Кватро Формаджи',
@@ -14,6 +15,7 @@ let products = [
     image: require('../../image/Pizza/Quatro.png'),
     weight: 350,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Примавера',
@@ -22,6 +24,7 @@ let products = [
     image: require('../../image/Pizza/Primavera.png'),
     weight: 370,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Аль Сальмоне',
@@ -30,6 +33,7 @@ let products = [
     image: require('../../image/Pizza/Salmon.png'),
     weight: 420,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Барбекю',
@@ -38,6 +42,7 @@ let products = [
     image: require('../../image/Pizza/Barbeku.png'),
     weight: 380,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Фрутти ди Маре с моцареллой',
@@ -46,6 +51,7 @@ let products = [
     image: require('../../image/Pizza/Frutti.png'),
     weight: 350,
     classTab: 'Pizza',
+    inBasket: 'false'
   },
   {
     title: 'Пенне в сливочном соусе',
@@ -54,6 +60,7 @@ let products = [
     image: require('../../image/Pasta/Penne.png'),
     weight: 280,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Пенне в томатном соусе',
@@ -62,6 +69,7 @@ let products = [
     image: require('../../image/Pasta/PenneTomato.png'),
     weight: 285,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Пенне с цыплёнком и песто',
@@ -70,6 +78,7 @@ let products = [
     image: require('../../image/Pasta/PenneChicken.png'),
     weight: 250,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Кинотто с гребешками',
@@ -78,6 +87,7 @@ let products = [
     image: require('../../image/Pasta/Kinotto.png'),
     weight: 250,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Пенне 3 сыра',
@@ -86,6 +96,7 @@ let products = [
     image: require('../../image/Pasta/ThreeChessy.png'),
     weight: 250,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Пенне с уткой',
@@ -94,6 +105,7 @@ let products = [
     image: require('../../image/Pasta/Duck.png'),
     weight: 460,
     classTab: 'Pasta',
+    inBasket: 'false'
   },
   {
     title: 'Тёплый салат с мраморной говядиной',
@@ -102,6 +114,7 @@ let products = [
     image: require('../../image/Salad/Warp.png'),
     weight: 180,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Цезарь с креветками',
@@ -110,6 +123,7 @@ let products = [
     image: require('../../image/Salad/Shrimps.png'),
     weight: 190,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Цезарь с куриной грудкой',
@@ -118,6 +132,7 @@ let products = [
     image: require('../../image/Salad/Cesar.png'),
     weight: 200,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Баклажаны со страчателлой',
@@ -126,6 +141,7 @@ let products = [
     image: require('../../image/Salad/Vegetables.png'),
     weight: 180,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Зеленый салат с эдамаме',
@@ -134,6 +150,7 @@ let products = [
     image: require('../../image/Salad/Green.png'),
     weight: 160,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Салат с лососем',
@@ -142,6 +159,7 @@ let products = [
     image: require('../../image/Salad/SalmonSalad.png'),
     weight: 190,
     classTab: 'Salad',
+    inBasket: 'false'
   },
   {
     title: 'Домашняя похлебка с морепродуктами',
@@ -150,6 +168,7 @@ let products = [
     image: require('../../image/Hot/SeaSoup.png'),
     weight: 315,
     classTab: 'Hot',
+    inBasket: 'false'
   },
   {
     title: 'Семейный очаг',
@@ -158,6 +177,7 @@ let products = [
     image: require('../../image/Hot/Mushroom.png'),
     weight: 220,
     classTab: 'Hot',
+    inBasket: 'false'
   },
   {
     title: 'Минестроне',
@@ -166,6 +186,7 @@ let products = [
     image: require('../../image/Hot/Minestrone.png'),
     weight: 280,
     classTab: 'Hot',
+    inBasket: 'false'
   },
   {
     title: 'Скалопини из курицы',
@@ -174,6 +195,7 @@ let products = [
     image: require('../../image/Hot/FriedChicken.png'),
     weight: 380,
     classTab: 'Hot',
+    inBasket: 'false'
   },
   {
     title: 'Миланезе де Полло',
@@ -182,6 +204,7 @@ let products = [
     image: require('../../image/Hot/Milaneze.png'),
     weight: 240,
     classTab: 'Hot',
+    inBasket: 'false'
   },
   {
     title: 'Медальоны аль базилико',
@@ -190,6 +213,7 @@ let products = [
     image: require('../../image/Hot/Basiliko.png'),
     weight: 440,
     classTab: 'Hot',
+    inBasket: 'false'
   },
 ];
 

@@ -12,7 +12,7 @@ const Basket = ({navigation}) => {
   const styles = useStyleBasket();
   if (true) {
     return (
-      <Layout>
+      <Layout navigation={navigation}>
         <View style={styles.page}>
           <BasketList />
         </View>
