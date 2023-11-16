@@ -14,6 +14,10 @@ const buttons = [
       title: 'Dinner',
       id: 3,
     },
+    {
+      title: 'All',
+      id: 4,
+    },
     
   ];
   

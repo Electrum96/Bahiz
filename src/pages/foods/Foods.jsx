@@ -15,7 +15,9 @@ const Foods = ({route, navigation}) => {
         <Text style={styles.title}>Categories</Text>
 
         <View style={styles.listWrap}>
+        
           <ButtonsList />
+        
         </View>
 
         <View style={styles.listBox}>
