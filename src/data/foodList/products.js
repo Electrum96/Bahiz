@@ -222,7 +222,6 @@ const getID = () =>  Math.random().toString() + new Date().getDate().toString()
 products = products.map(el => {
   return {
     ...el,
-    added: false,
     count: 1,
     id: getID(),
   };

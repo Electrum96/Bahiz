@@ -4,8 +4,9 @@ import useStyleFoodItem from './useStyleFoodItem';
 
 const FoodItem = ({navigation,image, title, price, desc, id}) => {
   const styles = useStyleFoodItem();
+ 
   return (
-    <TouchableOpacity onPress={() => navigation.push('FoodCard', {image, title, price, desc,id})}>
+    <TouchableOpacity onPress={() => navigation.push('FoodCard', {id})}>
     <View style={styles.itemWrap}>
       <Image style={styles.image} source={image} />
       <View style={styles.infoWrap}>
