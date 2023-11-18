@@ -12,7 +12,7 @@ function useStyleBroning () {
             gap:5
         },
         input:{
-            borderWidth: 1,
+            borderWidth: 2,
             borderColor: COLORS.accentBg,
             borderRadius: 10
         },
