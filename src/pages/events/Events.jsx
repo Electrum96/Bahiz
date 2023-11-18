@@ -1,14 +1,18 @@
 import {Text, View, Image} from 'react-native';
 
 import useStyleEvents from './useStyleEvents';
+import Layout from '../../components/layout/Layout';
+import FooterButton from '../../components/footerButton/FooterButton';
 
-const Events = () => {
+const Events = ({navigation}) => {
 
 const styles = useStyleEvents();
     return (
-        <View>
-            <Text>Events</Text>
+      <Layout navigation={navigation}>
+        <View style={styles.page}>
+            <FooterButton title={'Go Main'} onPress={() => navigation.push('MenuApp')}/>
         </View>
+      </Layout>
     )
 }
 
