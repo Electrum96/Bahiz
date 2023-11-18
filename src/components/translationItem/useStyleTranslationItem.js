@@ -1,19 +1,23 @@
 import {StyleSheet} from 'react-native';
 import {COLORS} from '../../styles/variables';
 
-function useStyleTranslationItem() {
+function useStyleTranslationItem(even) {
   const styles = StyleSheet.create({
     itemWrap: {
-      flexDirection: 'row',
-      gap: 10,
-      width: 300,
+      flexDirection: even ? 'row' : 'row-reverse',
+      gap: 15,
+      width: "100%",
       padding: 10,
       alignItems: 'center',
+   
+    
     },
     ligaWrap: {
       backgroundColor: COLORS.accentBg,
       borderRadius: 10,
       width: '35%',
+      height: 90,
+      justifyContent: 'center'
     },
     liga: {
       textAlign: 'center',
