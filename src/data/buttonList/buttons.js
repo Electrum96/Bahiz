@@ -19,6 +19,7 @@ const buttons = [
     },
     {
       title: 'All',
+      classTab: 'All',
       id: 4,
     },
     
