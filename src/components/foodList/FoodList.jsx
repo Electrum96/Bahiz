@@ -5,23 +5,21 @@ import useStyleFoodList from './useStyleFoodList';
 import FoodItem from '../foodItem/FoodItem';
 import productsSlice from '../../store/productsSlice';
 
+import {observer} from 'mobx-react-lite';
+
 const FoodList = ({navigation}) => {
   const styles = useStyleFoodList();
-  const {productListAll} = productsSlice;
+  const {productForFilter} = productsSlice;
   return (
     <ScrollView>
       <Text style={styles.title}>Name Category</Text>
       <View style={styles.listWrap}>
-        {productListAll.map((item) => (
-          <FoodItem
-            key={item.id}
-            {...item}
-            navigation={navigation}
-          />
+        {productForFilter.map(item => (
+          <FoodItem key={item.id} {...item} navigation={navigation} />
         ))}
       </View>
-      </ScrollView>
+    </ScrollView>
   );
 };
 
-export default FoodList;
+export default observer(FoodList);

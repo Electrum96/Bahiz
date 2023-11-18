@@ -6,6 +6,7 @@ class ProductSlice {
   }
 
   productListAll = products;
+  productForFilter = products;
 
   addBasket = id => {
     const item = this.productListAll.find(product => product.id === id);
@@ -27,6 +28,12 @@ class ProductSlice {
 
     return product ? true : false;
   };
+
+  filterProduct = (value) => {
+   const filtered =  this.productListAll.filter((i) => i.classTab === value);
+   this.productForFilter = filtered; 
+    
+  }
 
 
   get basketList() {

@@ -5,7 +5,7 @@ let products = [
     price: 649,
     image: require('../../image/Pizza/Mexica.png'),
     weight: 485,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -14,7 +14,7 @@ let products = [
     price: 759,
     image: require('../../image/Pizza/Quatro.png'),
     weight: 350,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -23,7 +23,7 @@ let products = [
     price: 625,
     image: require('../../image/Pizza/Primavera.png'),
     weight: 370,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -32,7 +32,7 @@ let products = [
     price: 800,
     image: require('../../image/Pizza/Salmon.png'),
     weight: 420,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -41,7 +41,7 @@ let products = [
     price: 540,
     image: require('../../image/Pizza/Barbeku.png'),
     weight: 380,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -50,7 +50,7 @@ let products = [
     price: 470,
     image: require('../../image/Pizza/Frutti.png'),
     weight: 350,
-    classTab: 'Pizza',
+    classTab: 'Breakfast',
     inBasket: 'false'
   },
   {
@@ -59,7 +59,7 @@ let products = [
     price: 729,
     image: require('../../image/Pasta/Penne.png'),
     weight: 280,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -68,7 +68,7 @@ let products = [
     price: 650,
     image: require('../../image/Pasta/PenneTomato.png'),
     weight: 285,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -77,7 +77,7 @@ let products = [
     price: 500,
     image: require('../../image/Pasta/PenneChicken.png'),
     weight: 250,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -86,7 +86,7 @@ let products = [
     price: 779,
     image: require('../../image/Pasta/Kinotto.png'),
     weight: 250,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -95,7 +95,7 @@ let products = [
     price: 530,
     image: require('../../image/Pasta/ThreeChessy.png'),
     weight: 250,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -104,7 +104,7 @@ let products = [
     price: 740,
     image: require('../../image/Pasta/Duck.png'),
     weight: 460,
-    classTab: 'Pasta',
+    classTab: 'Lunch',
     inBasket: 'false'
   },
   {
@@ -113,7 +113,7 @@ let products = [
     price: 735,
     image: require('../../image/Salad/Warp.png'),
     weight: 180,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
   {
@@ -122,7 +122,7 @@ let products = [
     price: 750,
     image: require('../../image/Salad/Shrimps.png'),
     weight: 190,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
   {
@@ -131,7 +131,7 @@ let products = [
     price: 670,
     image: require('../../image/Salad/Cesar.png'),
     weight: 200,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
   {
@@ -140,7 +140,7 @@ let products = [
     price: 595,
     image: require('../../image/Salad/Vegetables.png'),
     weight: 180,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
   {
@@ -149,7 +149,7 @@ let products = [
     price: 485,
     image: require('../../image/Salad/Green.png'),
     weight: 160,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
   {
@@ -158,63 +158,10 @@ let products = [
     price: 699,
     image: require('../../image/Salad/SalmonSalad.png'),
     weight: 190,
-    classTab: 'Salad',
+    classTab: 'Dinner',
     inBasket: 'false'
   },
-  {
-    title: 'Домашняя похлебка с морепродуктами',
-    desc: 'Суп с кальмарами, креветками, каперсами и овощами. Поднять паруса!',
-    price: 630,
-    image: require('../../image/Hot/SeaSoup.png'),
-    weight: 315,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
-  {
-    title: 'Семейный очаг',
-    desc: 'Сытный мясной суп с говядиной, курицей, свининой и овощами. Заботливо согревает и обволакивает',
-    price: 579,
-    image: require('../../image/Hot/Mushroom.png'),
-    weight: 220,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
-  {
-    title: 'Минестроне',
-    desc: 'Традиционный итальянский суп с овощами и соусом песто. Для любителей классики',
-    price: 389,
-    image: require('../../image/Hot/Minestrone.png'),
-    weight: 280,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
-  {
-    title: 'Скалопини из курицы',
-    desc: 'Нежное куриное филе в сливочно-грибном соусе. Подается с обжаренными дольками картофеля.',
-    price: 709,
-    image: require('../../image/Hot/FriedChicken.png'),
-    weight: 380,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
-  {
-    title: 'Миланезе де Полло',
-    desc: 'Большая котлета из куриной грудки в панировке запекается с томатным соусом под сыром моцарелла и подается с картофельными дольками, карамелизированной морковью',
-    price: 529,
-    image: require('../../image/Hot/Milaneze.png'),
-    weight: 240,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
-  {
-    title: 'Медальоны аль базилико',
-    desc: 'Медальоны из свинины в сливочном соусе с песто и грибами. Подаём с картофельным пюре и томатами черри – очень удачная компания.',
-    price: 725,
-    image: require('../../image/Hot/Basiliko.png'),
-    weight: 440,
-    classTab: 'Hot',
-    inBasket: 'false'
-  },
+
 ];
 
 const getID = () =>  Math.random().toString() + new Date().getDate().toString()

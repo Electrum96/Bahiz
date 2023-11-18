@@ -11,7 +11,7 @@ const ButtonsList = () => {
     <ScrollView horizontal={true}>
       <View style={styles.buttonsWrap}>
         {buttons.map(button => (
-          <ButtonItem key={button.id} title={button.title} />
+          <ButtonItem key={button.id} {...button} />
         ))}
       </View>
     </ScrollView>

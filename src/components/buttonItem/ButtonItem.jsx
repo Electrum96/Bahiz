@@ -2,18 +2,20 @@ import {Text, View, TouchableOpacity} from 'react-native';
 
 import useStyleButtonItem from './useStyleButtonItem';
 
-const ButtonItem = ({title}) => {
+import productsSlice from '../../store/productsSlice';
 
-const styles = useStyleButtonItem();
-    return (
-        
-        <View style={styles.itemWrap}>
-            <TouchableOpacity>
-            <Text style={styles.title}>{title}</Text>
-            </TouchableOpacity>
-        </View>
-  
-    )
-}
+const ButtonItem = ({title, classTab}) => {
+
+  const {filterProduct} = productsSlice;
+
+  const styles = useStyleButtonItem();
+  return (
+    <View style={styles.itemWrap}>
+      <TouchableOpacity onPress={() => filterProduct(classTab)}>
+        <Text style={styles.title}>{title}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 export default ButtonItem;
