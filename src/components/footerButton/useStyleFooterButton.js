@@ -11,7 +11,8 @@ function useStyleFooterButton() {
       elevation: 6,
       shadowRadius: 15,
       shadowOffset: {width: 1, height: 13},
-      padding: 15
+      padding: 15,
+     
     },
     buttonTitle:{
       textAlign: 'center',

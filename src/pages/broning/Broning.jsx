@@ -24,7 +24,7 @@ const styles = useStyleBroning();
                 </View>
 
                 <Text style={styles.text}>Welcome friend, enter your details so lets get started  food.</Text>
-                <FooterButton  title={'GO MAIN'} onPress={() => navigation.push('Thanks')}/>
+                <FooterButton  title={'Reserve'} onPress={() => navigation.push('Thanks')}/>
                 
             </View>
         </Layout>

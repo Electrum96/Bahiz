@@ -14,13 +14,17 @@ const Successful = ({navigation}) => {
           source={require('../../image/background/suc.png')}
           resizeMode="contain"
         />
-        <Text>Your order has been successfully placed</Text>
+       
+        <Text style={styles.text}>Your order has been successfully placed</Text>
         <Image
           style={styles.code}
           source={require('../../image/icon/square.png')}
         />
+     
 
-        <FooterButton title={'Go back to home'} />
+        <View style={styles.buttonWrap}>
+        <FooterButton title={'Go back to home'} onPress={() => navigation.push('MenuApp')} />
+        </View>
       </View>
     </Layout>
   );
