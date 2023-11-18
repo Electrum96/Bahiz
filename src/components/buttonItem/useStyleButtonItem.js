@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import { COLORS } from '../../styles/variables';
 
-function useStyleButtonItem () {
+function useStyleButtonItem (isActive) {
     const styles = StyleSheet.create({
         itemWrap: {
             width: 100,
@@ -9,7 +9,7 @@ function useStyleButtonItem () {
             borderColor: COLORS.accentBg ,
             borderRadius: 5,
             borderWidth: 1,
-            backgroundColor: COLORS.accent
+            backgroundColor: isActive ? COLORS.accentBg : COLORS.accent
         },
         title: {
             textAlign: 'center'

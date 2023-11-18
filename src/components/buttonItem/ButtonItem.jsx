@@ -4,11 +4,14 @@ import useStyleButtonItem from './useStyleButtonItem';
 
 import productsSlice from '../../store/productsSlice';
 
+import {observer} from 'mobx-react-lite';
+
 const ButtonItem = ({title, classTab}) => {
+  const {filterProduct, filter} = productsSlice;
 
-  const {filterProduct} = productsSlice;
+  const isActive = classTab === filter;
 
-  const styles = useStyleButtonItem();
+  const styles = useStyleButtonItem(isActive);
   return (
     <View style={styles.itemWrap}>
       <TouchableOpacity onPress={() => filterProduct(classTab)}>
@@ -18,4 +21,4 @@ const ButtonItem = ({title, classTab}) => {
   );
 };
 
-export default ButtonItem;
+export default observer(ButtonItem);
