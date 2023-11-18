@@ -5,11 +5,11 @@ import Container from '../container/Container';
 import Header from '../header/Header';
 import FooterButton from '../footerButton/FooterButton';
 
-const Layout = ({children, navigation}) => {
+const Layout = ({route, children, navigation}) => {
   const styles = useStyleLayout();
   return (
     <View style={styles.layoutWrap}>
-      <Header navigation={navigation} />
+      <Header route={route} navigation={navigation} />
 
       <View style={styles.bgc}>
         <Container>{children}</Container>

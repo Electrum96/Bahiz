@@ -4,11 +4,11 @@ import useStyleContacts from './useStyleContacts';
 import Layout from '../../components/layout/Layout';
 import FooterButton from '../../components/footerButton/FooterButton';
 
-const Contacts = ({navigation}) => {
+const Contacts = ({route, navigation}) => {
 
 const styles = useStyleContacts();
     return (
-        <Layout navigation={navigation}>
+        <Layout route={route} navigation={navigation}>
             <View style={styles.pageWrap}>
 
                 <View style={styles.formWrap}>

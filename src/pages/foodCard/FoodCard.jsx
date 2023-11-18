@@ -21,7 +21,7 @@ const FoodCard = ({route, navigation}) => {
   const {image, title, desc, count, price,} = foodData;
 
   return (
-    <Layout navigation={navigation}>
+    <Layout route={route} navigation={navigation}>
       <View style={styles.page}>
         <View style={styles.main}>
           <Image style={styles.image} source={image} />

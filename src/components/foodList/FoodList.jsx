@@ -5,7 +5,7 @@ import useStyleFoodList from './useStyleFoodList';
 import FoodItem from '../foodItem/FoodItem';
 import productsSlice from '../../store/productsSlice';
 
-const FoodList = ({navigation, route}) => {
+const FoodList = ({navigation}) => {
   const styles = useStyleFoodList();
   const {productListAll} = productsSlice;
   return (

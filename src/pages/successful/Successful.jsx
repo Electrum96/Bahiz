@@ -4,10 +4,10 @@ import useStyleSuccessful from './useStyleSuccessful';
 import Layout from '../../components/layout/Layout';
 import FooterButton from '../../components/footerButton/FooterButton';
 
-const Successful = ({navigation}) => {
+const Successful = ({route, navigation}) => {
   const styles = useStyleSuccessful();
   return (
-    <Layout navigation={navigation}>
+    <Layout route={route} navigation={navigation}>
       <View style={styles.page}>
         <Image
           style={styles.image}

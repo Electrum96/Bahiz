@@ -5,11 +5,11 @@ import Layout from '../../components/layout/Layout';
 import FooterButton from '../../components/footerButton/FooterButton';
 import TranslationsList from '../../components/translationsList/TranslationsList';
 
-const Translations = ({navigation}) => {
+const Translations = ({route, navigation}) => {
 
 const styles = useStyleTranslations();
     return (
-        <Layout navigation={navigation}>
+        <Layout route={route} navigation={navigation}>
         <View style={styles.page}>
             <ScrollView>
             <TranslationsList/>

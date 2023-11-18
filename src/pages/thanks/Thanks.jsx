@@ -4,10 +4,10 @@ import useStyleThanks from './useStyleThanks';
 import FooterButton from '../../components/footerButton/FooterButton';
 import Layout from '../../components/layout/Layout';
 
-const Thanks = ({navigation}) => {
+const Thanks = ({route, navigation}) => {
   const styles = useStyleThanks();
   return (
-    <Layout navigation={navigation}>
+    <Layout route={route} navigation={navigation}>
       <View style={styles.page}>
         <Image
           style={styles.image}

@@ -10,7 +10,7 @@ import FoodList from '../../components/foodList/FoodList';
 const Foods = ({route, navigation}) => {
   const styles = useStyleFoods();
   return (
-    <Layout navigation={navigation}>
+    <Layout route={route} navigation={navigation}>
       <View style={styles.mainWrap}>
         <Text style={styles.title}>Categories</Text>
 
@@ -21,7 +21,7 @@ const Foods = ({route, navigation}) => {
         </View>
 
         <View style={styles.listBox}>
-            <FoodList route={route} navigation={navigation} />
+            <FoodList  navigation={navigation} />
         </View>
 
 

@@ -12,12 +12,12 @@ import productsSlice from '../../store/productsSlice';
 
 import { observer } from 'mobx-react-lite';
 
-const Basket = ({navigation}) => {
+const Basket = ({route, navigation}) => {
   const styles = useStyleBasket();
   const {basketList, totalPrice} = productsSlice;
   if (true) {
     return (
-      <Layout navigation={navigation}>
+      <Layout route={route}navigation={navigation}>
         <View style={styles.page}>
           <BasketList basketList={basketList}/>
         </View>
