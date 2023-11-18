@@ -5,6 +5,7 @@ class ProductSlice {
     makeAutoObservable(this);
   }
 
+  filter=  'all';
   productListAll = products;
   productForFilter = products;
 
@@ -13,7 +14,7 @@ class ProductSlice {
     item.inBasket = true;
   };
 
-  decrement = ( id) => {
+  decrement = id => {
     const item = this.productListAll.find(product => product.id === id);
     item.count -= 1;
   };
@@ -23,18 +24,17 @@ class ProductSlice {
     item.count += 1;
   };
 
-  findProduct = (id) => {
+  findProduct = id => {
     const product = this.productListAll.find(product => product.id === id);
 
     return product ? true : false;
   };
 
-  filterProduct = (value) => {
-   const filtered =  this.productListAll.filter((i) => i.classTab === value);
-   this.productForFilter = filtered; 
-    
-  }
-
+  filterProduct = value => {
+    const filtered = this.productListAll.filter(i => i.classTab === value);
+    this.filter = value;
+    this.productForFilter = filtered;
+  };
 
   get basketList() {
     return this.productListAll.filter(product => product.inBasket === true);

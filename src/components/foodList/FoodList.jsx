@@ -9,10 +9,10 @@ import {observer} from 'mobx-react-lite';
 
 const FoodList = ({navigation}) => {
   const styles = useStyleFoodList();
-  const {productForFilter} = productsSlice;
+  const {productForFilter, filter} = productsSlice;
   return (
     <ScrollView>
-      <Text style={styles.title}>Name Category</Text>
+      <Text style={styles.title}>{filter}</Text>
       <View style={styles.listWrap}>
         {productForFilter.map(item => (
           <FoodItem key={item.id} {...item} navigation={navigation} />
