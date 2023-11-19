@@ -5,7 +5,12 @@ import {StyleSheet} from 'react-native';
 function useStyleEventsList () {
     const styles = StyleSheet.create({
         listWrap:{
-            height: '90%'
+            height: '80%',
+            flexWrap: 'wrap',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            marginTop: 40,
+            gap: 10
         }
         
     });

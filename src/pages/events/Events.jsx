@@ -1,4 +1,4 @@
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, ScrollView} from 'react-native';
 
 import useStyleEvents from './useStyleEvents';
 import Layout from '../../components/layout/Layout';
@@ -10,7 +10,9 @@ const Events = ({route, navigation}) => {
   return (
     <Layout route={route} navigation={navigation}>
       <View style={styles.page}>
+        <ScrollView>
         <EventsList />
+        </ScrollView>
         <FooterButton
           title={'Go Main'}
           onPress={() => navigation.push('MenuApp')}

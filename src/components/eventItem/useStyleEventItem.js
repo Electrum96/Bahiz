@@ -3,7 +3,9 @@ import {StyleSheet} from 'react-native';
 function useStyleEventItem () {
     const styles = StyleSheet.create({
         wrapItem:{
-            backgroundColor: 'orange'
+            backgroundColor: 'orange',
+            width: '40%',
+            gap: 3
         }
     });
 
