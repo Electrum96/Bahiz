@@ -19,7 +19,7 @@ function useStyleFoodItem() {
       alignSelf: 'center',
       flex: 1,
       width: 160,
-      height: 150,
+      height: 300,
     },
     infoWrap: {
       alignItems: 'flex-start',
