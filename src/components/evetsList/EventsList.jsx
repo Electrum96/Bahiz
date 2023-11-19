@@ -9,9 +9,8 @@ const EventsList = () => {
 
 const styles = useStyleEventsList();
     return (
-        <View>
+        <View style={styles.listWrap}>
             {events.map((event) => <EventItem key={event.id} {...event}/>)}
-            <Text>EventsList</Text>
         </View>
     )
 }

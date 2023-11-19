@@ -2,12 +2,14 @@ import {Text, View, Image} from 'react-native';
 
 import useStyleEventItem from './useStyleEventItem';
 
-const EventItem = () => {
+const EventItem = ({title, desc}) => {
 
 const styles = useStyleEventItem();
     return (
-        <View>
-            <Text>EventItem</Text>
+        <View style={styles.wrapItem}>
+            {/* <Image/> */}
+            <Text>{title}</Text>
+            <Text>{desc}</Text>
         </View>
     )
 }
