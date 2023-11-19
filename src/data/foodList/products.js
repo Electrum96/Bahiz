@@ -6,7 +6,6 @@ let products = [
     image: require('../../image/Breakfast/Kasha.jpeg'),
     weight: 250,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Сырники домашние',
@@ -15,7 +14,6 @@ let products = [
     image: require('../../image/Breakfast/Cheesy.jpeg'),
     weight: 250,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Блины с творогом',
@@ -24,7 +22,6 @@ let products = [
     image: require('../../image/Breakfast/Pancakes.jpeg'),
     weight: 250,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Блины с курицей',
@@ -33,7 +30,6 @@ let products = [
     image: require('../../image/Breakfast/Bliny.jpeg'),
     weight: 350,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Норвежский завтрак',
@@ -42,7 +38,6 @@ let products = [
     image: require('../../image/Breakfast/Omlet.jpeg'),
     weight: 370,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Голландский омлет',
@@ -51,7 +46,6 @@ let products = [
     image: require('../../image/Breakfast/Amlet.jpeg'),
     weight: 420,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Баварский завтрак',
@@ -60,7 +54,6 @@ let products = [
     image: require('../../image/Breakfast/Bavarian.jpeg'),
     weight: 380,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Каша из зеленой гречи',
@@ -69,7 +62,6 @@ let products = [
     image: require('../../image/Breakfast/Green.jpeg'),
     weight: 350,
     classTab: 'Breakfast',
-    inBasket: 'false'
   },
   {
     title: 'Кальмар гриль',
@@ -78,7 +70,6 @@ let products = [
     image: require('../../image/Lunch/Kalmar.jpeg'),
     weight: 280,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Медальоны из свинины',
@@ -87,7 +78,6 @@ let products = [
     image: require('../../image/Lunch/Pork.jpeg'),
     weight: 285,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Грибной крем-суп',
@@ -96,7 +86,6 @@ let products = [
     image: require('../../image/Lunch/Mushrooms.jpeg'),
     weight: 285,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Сырный крем-суп',
@@ -105,7 +94,6 @@ let products = [
     image: require('../../image/Lunch/Yellow.jpeg'),
     weight: 285,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Индейка с тыквой',
@@ -114,7 +102,6 @@ let products = [
     image: require('../../image/Lunch/Indi.jpeg'),
     weight: 250,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Зеленый суп',
@@ -123,7 +110,6 @@ let products = [
     image: require('../../image/Lunch/Gsoup.jpeg'),
     weight: 250,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Тыквенный суп',
@@ -132,7 +118,6 @@ let products = [
     image: require('../../image/Lunch/Pumpkin.jpeg'),
     weight: 250,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Суп из цукини',
@@ -141,7 +126,6 @@ let products = [
     image: require('../../image/Lunch/Zuccini.jpeg'),
     weight: 460,
     classTab: 'Lunch',
-    inBasket: 'false'
   },
   {
     title: 'Цыпленок том-ям',
@@ -150,7 +134,6 @@ let products = [
     image: require('../../image/Dinner/Chciken.jpeg'),
     weight: 180,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Печеная треска',
@@ -159,7 +142,6 @@ let products = [
     image: require('../../image/Dinner/Fish.jpeg'),
     weight: 190,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Wok-паста',
@@ -168,7 +150,6 @@ let products = [
     image: require('../../image/Dinner/Azian.jpeg'),
     weight: 180,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Бифштекс',
@@ -177,7 +158,6 @@ let products = [
     image: require('../../image/Dinner/Bif.jpeg'),
     weight: 200,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Эскалоп по Милански',
@@ -186,7 +166,6 @@ let products = [
     image: require('../../image/Dinner/Meat.jpeg'),
     weight: 180,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Паста карбонара',
@@ -195,7 +174,6 @@ let products = [
     image: require('../../image/Dinner/PorkPasta.jpeg'),
     weight: 180,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Паста песто',
@@ -204,7 +182,6 @@ let products = [
     image: require('../../image/Dinner/Pesto.jpeg'),
     weight: 160,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
   {
     title: 'Паста с морепродуктами',
@@ -213,7 +190,6 @@ let products = [
     image: require('../../image/Dinner/Sea.jpeg'),
     weight: 190,
     classTab: 'Dinner',
-    inBasket: 'false'
   },
 
 ];
@@ -224,6 +200,7 @@ products = products.map(el => {
   return {
     ...el,
     count: 1,
+    inBasket: false,
     id: getID(),
   };
 });
