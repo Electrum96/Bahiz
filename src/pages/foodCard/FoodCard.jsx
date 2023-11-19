@@ -1,4 +1,4 @@
-import {Text, View, Image, TouchableOpacity} from 'react-native';
+import {Text, View, Image, TouchableOpacity, Alert} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 import useStyleFoodCard from './useStyleFoodCard';
@@ -9,17 +9,23 @@ import Counter from '../../components/counter/Counter';
 import productsSlice from '../../store/productsSlice';
 
 import {observer} from 'mobx-react-lite';
-import React from 'react';
+import React, {useState} from 'react';
 
 const FoodCard = ({route, navigation}) => {
   const styles = useStyleFoodCard();
   const {id} = route.params;
 
-  const {addBasket, productListAll, findProduct} = productsSlice;
+  const {addBasket, productListAll,} = productsSlice;
 
   const foodData = productListAll.find(el => el.id === id);
-  const {image, title, desc, count, price,} = foodData;
+  const {image, title, desc, count, price, inBasket} = foodData;
 
+  const [isBasket, setIsBasket] = useState(inBasket);
+
+  const handlerAddBasket = () => {
+    addBasket(id);
+    setIsBasket(pref => !pref);
+  };
   return (
     <Layout route={route} navigation={navigation}>
       <View style={styles.page}>
@@ -39,8 +45,10 @@ const FoodCard = ({route, navigation}) => {
             <Text style={styles.price}>{'$ ' + price * count}</Text>
           </View>
 
-          <TouchableOpacity style={styles.buttonWrap} onPress={() => addBasket(id)}>
-            <Text style={styles.titleButton}>{'text'}</Text>
+          <TouchableOpacity
+            style={styles.buttonWrap}
+            onPress={handlerAddBasket}>
+            <Text style={styles.titleButton}>{isBasket? 'da': 'net'}</Text>
             <View style={styles.iconWrap}>
               <FontAwesomeIcon icon={'shopping-cart'} color="red" size={15} />
             </View>

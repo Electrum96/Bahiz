@@ -13,11 +13,11 @@ const ButtonItem = ({title, classTab}) => {
 
   const styles = useStyleButtonItem(isActive);
   return (
-    <View style={styles.itemWrap}>
-      <TouchableOpacity onPress={() => filterProduct(classTab)}>
+    <TouchableOpacity onPress={() => filterProduct(classTab)}>
+      <View style={styles.itemWrap}>
         <Text style={styles.title}>{title}</Text>
-      </TouchableOpacity>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
