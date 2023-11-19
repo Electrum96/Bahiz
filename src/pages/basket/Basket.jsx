@@ -21,7 +21,7 @@ const Basket = ({route, navigation}) => {
     clear()
   }
 
-  if (true) {
+  if (basketList.length > 0) {
     return (
       <Layout route={route}navigation={navigation}>
         <View style={styles.page}>
@@ -40,7 +40,7 @@ const Basket = ({route, navigation}) => {
       </Layout>
     );
   } else {
-    return <EmptyBasket />;
+    return <EmptyBasket route={route}navigation={navigation} />;
   }
 };
 
