@@ -10,7 +10,7 @@ const ButtonItem = tab => {
   const {title, classTab} = tab;
   const {filterProduct, filter} = productsSlice;
 
-  const isActive = classTab === filter;
+  const isActive = classTab === filter.classTab;
 
   const styles = useStyleButtonItem(isActive);
   return (
