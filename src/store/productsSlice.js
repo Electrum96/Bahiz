@@ -5,7 +5,10 @@ class ProductSlice {
     makeAutoObservable(this);
   }
 
-  filter = 'All';
+  filter = {
+    title: 'All',
+    classTab: 'All',
+  };
   productListAll = products;
   productForFilter = products;
 
@@ -41,14 +44,17 @@ class ProductSlice {
     return product ? true : false;
   };
 
-  filterProduct = value => {
-    const filtered = this.productListAll.filter(i => i.classTab === value);
-    if (value === 'All') {
+  filterProduct = tab => {
+    const filtered = this.productListAll.filter(
+      i => i.classTab === tab.classTab,
+    );
+
+    if (tab.classTab === 'All') {
       this.productForFilter = this.productListAll;
     } else {
       this.productForFilter = filtered;
     }
-    this.filter = value;
+    this.filter = tab;
   };
 
   get basketList() {

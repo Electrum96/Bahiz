@@ -12,7 +12,7 @@ const FoodList = ({navigation}) => {
   const {productForFilter, filter} = productsSlice;
   return (
     <ScrollView>
-      <Text style={styles.title}>{filter}</Text>
+      <Text style={styles.title}>{filter.title}</Text>
       <View style={styles.listWrap}>
         {productForFilter.map(item => (
           <FoodItem key={item.id} {...item} navigation={navigation} />
