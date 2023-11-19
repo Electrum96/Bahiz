@@ -14,7 +14,13 @@ import { observer } from 'mobx-react-lite';
 
 const Basket = ({route, navigation}) => {
   const styles = useStyleBasket();
-  const {basketList, totalPrice} = productsSlice;
+  const {basketList, totalPrice, clear} = productsSlice;
+
+  const handlerPayment = () => {
+    navigation.push('Successful')
+    clear()
+  }
+
   if (true) {
     return (
       <Layout route={route}navigation={navigation}>
@@ -28,7 +34,7 @@ const Basket = ({route, navigation}) => {
           </View>
         </Container>
         <FooterButton
-          onPress={() => navigation.push('Successful')}
+          onPress={handlerPayment}
           title={'Process to payment'}
         />
       </Layout>

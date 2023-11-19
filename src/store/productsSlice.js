@@ -16,12 +16,23 @@ class ProductSlice {
 
   decrement = id => {
     const item = this.productListAll.find(product => product.id === id);
-    if(item.count > 1) {item.count -= 1};
+    if (item.count > 1) {
+      item.count -= 1;
+    } else {
+      item.inBasket = false;
+    }
   };
 
   increment = id => {
     const item = this.productListAll.find(product => product.id === id);
     item.count += 1;
+  };
+
+  clear = () => {
+    this.basketList.forEach(elem => {
+      elem.inBasket = false;
+      elem.count = 1;
+    });
   };
 
   findProduct = id => {
