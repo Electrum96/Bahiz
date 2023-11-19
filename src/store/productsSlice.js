@@ -16,7 +16,7 @@ class ProductSlice {
 
   decrement = id => {
     const item = this.productListAll.find(product => product.id === id);
-    item.count -= 1;
+    if(item.count > 1) {item.count -= 1};
   };
 
   increment = id => {
