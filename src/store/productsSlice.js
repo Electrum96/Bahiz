@@ -6,7 +6,7 @@ class ProductSlice {
   }
 
   filter = {
-    title: 'All',
+    title: 'Todo',
     classTab: 'All',
   };
   productListAll = products;
