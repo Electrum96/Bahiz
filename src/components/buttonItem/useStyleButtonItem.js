@@ -9,7 +9,7 @@ function useStyleButtonItem (isActive) {
             borderColor: COLORS.accentBg ,
             borderRadius: 5,
             borderWidth: 1,
-            backgroundColor: isActive ? COLORS.accentBg : COLORS.accent
+            backgroundColor: isActive ? COLORS.lightBg : COLORS.accent
         },
         title: {
             textAlign: 'center'

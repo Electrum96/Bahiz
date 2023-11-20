@@ -1,24 +1,24 @@
 
 const buttons = [
     {
-      title: 'Breakfast',
+      title: 'Desayuno',
       classTab: 'Breakfast',
       id: 1,
     },
   
     {
-      title: 'Lunch',
+      title: 'Almuerzo',
       classTab: 'Lunch',
       id: 2,
     },
   
     {
-      title: 'Dinner',
+      title: 'Cena',
       classTab: 'Dinner',
       id: 3,
     },
     {
-      title: 'All',
+      title: 'Todo',
       classTab: 'All',
       id: 4,
     },
