@@ -15,7 +15,7 @@ function useStyleEmptyBasket () {
         },
         title: {
             fontWeight: '600',
-            fontSize: 40,
+            fontSize: 35,
             color: COLORS.dark
         }
         

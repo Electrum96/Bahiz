@@ -14,7 +14,7 @@ const styles = useStyleTranslations();
             <ScrollView>
             <TranslationsList/>
             </ScrollView>
-            <FooterButton title={'Go Main'} onPress={() => navigation.push('MenuApp')}/>
+            <FooterButton title={'Ir a principal'} onPress={() => navigation.push('MenuApp')}/>
         </View>
       </Layout>
     )

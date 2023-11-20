@@ -15,11 +15,11 @@ const Thanks = ({route, navigation}) => {
           resizeMode="contain"
         />
        
-        <Text style={styles.text}>Thank You! Table Reserved</Text>
+        <Text style={styles.text}>Gracias! Mesa Reservada</Text>
          <View style={styles.buttonWrap}>
         <FooterButton
           style={styles.button}
-          title={'Go back to home'}
+          title={'Vuelve a casa'}
           onPress={() => navigation.push('MenuApp')}
         />
         </View>

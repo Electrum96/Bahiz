@@ -12,10 +12,10 @@ const styles = useStyleEmptyBasket();
         <Layout route={route} navigation={navigation}>
         <View style={styles.page}>
             <ImageBackground style={styles.image} resizeMode="contain" source={require('../../image/background/yellow.png')}>
-                <Text style={styles.title}>Cart is empty</Text>
+                <Text style={styles.title}>El carrito esta vacío</Text>
             </ImageBackground>
         </View>
-        <FooterButton onPress={() => navigation.push('MenuApp')} title={'GO MAIN'}/>
+        <FooterButton onPress={() => navigation.push('MenuApp')} title={'IR A PRINCIPAL'}/>
     </Layout>
     )
 }

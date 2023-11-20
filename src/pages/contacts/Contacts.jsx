@@ -12,17 +12,17 @@ const styles = useStyleContacts();
             <View style={styles.pageWrap}>
 
                 <View style={styles.formWrap}>
-                <Text style={styles.title}>Контакты</Text>
-                <Text style={styles.desc}>Email Address</Text>
+                <Text style={styles.title}>Contactos</Text>
+                <Text style={styles.desc}>Dirección de correo electrónico</Text>
                 <TextInput style={styles.input}/>
 
-                <Text style={styles.desc}>Phone</Text>
+                <Text style={styles.desc}>Teléfono</Text>
                 <TextInput style={styles.input}/>
 
-                <Text style={styles.desc}>Table</Text>
+                <Text style={styles.desc}>Mesa</Text>
                 <TextInput style={styles.input}/>
                 </View>
-                <FooterButton  title={'Go Main'} onPress={() => navigation.push('MenuApp')}/>
+                <FooterButton  title={'Ir a principal'} onPress={() => navigation.push('MenuApp')}/>
                 
             </View>
         </Layout>

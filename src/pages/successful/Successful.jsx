@@ -15,7 +15,7 @@ const Successful = ({route, navigation}) => {
           resizeMode="contain"
         />
        
-        <Text style={styles.text}>Your order has been successfully placed</Text>
+        <Text style={styles.text}>Su pedido ha sido realizado exitosamente</Text>
         <Image
           style={styles.code}
           source={require('../../image/icon/square.png')}
@@ -23,7 +23,7 @@ const Successful = ({route, navigation}) => {
      
 
         <View style={styles.buttonWrap}>
-        <FooterButton title={'Go back to home'} onPress={() => navigation.push('MenuApp')} />
+        <FooterButton title={'Vuelve a casa'} onPress={() => navigation.push('MenuApp')} />
         </View>
       </View>
     </Layout>

@@ -14,7 +14,7 @@ const Events = ({route, navigation}) => {
         <EventsList />
         </ScrollView>
         <FooterButton
-          title={'Go Main'}
+          title={'Ir a principal'}
           onPress={() => navigation.push('MenuApp')}
         />
       </View>

@@ -12,19 +12,19 @@ const styles = useStyleBroning();
             <View style={styles.pageWrap}>
 
                 <View style={styles.formWrap}>
-                <Text style={styles.title}>Бронь</Text>
-                <Text style={styles.desc}>Email Address</Text>
+                <Text style={styles.title}>Reserva</Text>
+                <Text style={styles.desc}>Dirección de correo electrónico</Text>
                 <TextInput style={styles.input}/>
 
-                <Text style={styles.desc}>Phone</Text>
+                <Text style={styles.desc}>Teléfono</Text>
                 <TextInput style={styles.input}/>
 
-                <Text style={styles.desc}>Table</Text>
+                <Text style={styles.desc}>Mesa</Text>
                 <TextInput style={styles.input}/>
                 </View>
 
-                <Text style={styles.text}>Welcome friend, enter your details so lets get started  food.</Text>
-                <FooterButton  title={'Reserve'} onPress={() => navigation.push('Thanks')}/>
+                <Text style={styles.text}>Bienvenido amigo, ingresa tus datos para comenzar con la comida.</Text>
+                <FooterButton  title={'Reservar'} onPress={() => navigation.push('Thanks')}/>
                 
             </View>
         </Layout>
