@@ -4,6 +4,7 @@ import { COLORS } from '../../styles/variables';
 function useStyleButtonItem (isActive) {
     const styles = StyleSheet.create({
         itemWrap: {
+            overflow: 'hidden',
             width: 100,
             height: 80,
             borderColor: COLORS.accentBg ,
@@ -12,7 +13,19 @@ function useStyleButtonItem (isActive) {
             backgroundColor: isActive ? COLORS.lightBg : COLORS.accent
         },
         title: {
-            textAlign: 'center'
+            marginLeft: 10,
+            marginTop: 5,
+            color: COLORS.dark,
+            fontSize: 13
+        },
+        image:{
+            marginHorizontal: 10,
+            backgroundColor: 'black',
+            marginTop: 10,
+            marginLeft: 35,
+            borderRadius: 180,
+            width: '80%',
+            height: '80%',
         }
         
     });
