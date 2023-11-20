@@ -7,9 +7,11 @@ const EventItem = ({image, title, desc}) => {
 const styles = useStyleEventItem();
     return (
         <View style={styles.wrapItem}>
-            <Image source={image}/>
-            <Text>{title}</Text>
-            <Text>{desc}</Text>
+            <Image style={styles.image} source={image}/>
+            <Text style={styles.title}>{title}</Text>
+            <View style={styles.descWrap}>
+            <Text styles={styles.desc}>{desc}</Text>
+            </View>
         </View>
     )
 }

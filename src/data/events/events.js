@@ -2,29 +2,29 @@
 const events = [
     {
       image: require('../../image/Events/Band.png'),
-      title: 'Живая музыка (джаз, блюз, аккустический вечер)',
-      desc: 'Окунитесь в атмосферу джаза и блюза на нашем аккустическом вечере с живой музыкой 20 ноября в 20:00 — идеальное сочетание непревзойденной кухни и мелодий для души.',
+      title: 'Música en vivo (jazz, blues, velada acústica)',
+      desc: 'Experimente el jazz y el blues en nuestro evento acústico de música en vivo el 22 de noviembre a las 8:00 p. m.: la combinación perfecta de cocina inigualable y melodías para el alma..',
       id: 1
     },
   
     {
       image: require('../../image/Events/Wine.png'),
-      title: 'Живопись и вино',
-      desc: 'Присоединяйтесь к нам для творческого дня "Живопись и вино" 20 ноября в 12:00, где вы сможете раскрыть свой художественный потенциал под бокал изысканного вина.',
+      title: 'Pintura y vino',
+      desc: 'Únase a nosotros para una jornada creativa "Pintura y Vino" el 23 de noviembre a las 12:00 horas, donde podrá dar rienda suelta a su potencial artístico con una copa de buen vino.',
       classTab: 'Lunch',
       id: 2
     },
   
     {
       image: require('../../image/Events/Coffe.png'),
-      title: 'Дегустация кофе',
-      desc: 'Откройте для себя мир ароматов на нашей дегустации кофе 25 ноября в 10:00, где вас ждет путешествие по лучшим кофейным плантациям и мастер-класс по завариванию.',
+      title: 'Degustación de café',
+      desc: 'Descubre un mundo de sabores en nuestra cata de café el 25 de noviembre a las 10:00, donde realizarás un viaje a los mejores cafetales y una master class de elaboración de cerveza..',
       id: 3
     },
     {
       image: require('../../image/Events/Wines.png'),
-      title: 'Винный ужин',
-      desc: 'Приглашаем вас на наш уникальный винный ужин 25 ноября в 19:00, где изысканные вина со всего мира великолепно дополнят специально подобранное меню от нашего шеф-повара',
+      title: 'Cena de vino',
+      desc: 'Te invitamos a nuestra exclusiva cena de vinos el 25 de noviembre a las 19:00, donde exquisitos vinos de todo el mundo complementarán a la perfección un menú especialmente seleccionado de nuestro chef.',
       id: 4
     },
     
