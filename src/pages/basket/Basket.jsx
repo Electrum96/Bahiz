@@ -30,7 +30,7 @@ const Basket = ({route, navigation}) => {
         <Container>
           <View style={styles.informWrap}>
             <Text style={styles.total}>Total</Text>
-            <Text style={styles.sum}>{'$ ' + totalPrice}</Text>
+            <Text style={styles.sum}>{'€ ' + totalPrice}</Text>
           </View>
         </Container>
         <FooterButton
