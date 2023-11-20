@@ -19,7 +19,7 @@ const BasketItem = ({image, title, price, id, count}) => {
       <View style={styles.informWrap}>
         <View>
           <Text style={styles.title}>{title}</Text>
-          <Text style={styles.price}>{price * count}</Text>
+          <Text style={styles.price}>€{price * count}</Text>
         </View>
 
         <View style={styles.counter}>

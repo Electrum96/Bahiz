@@ -10,7 +10,7 @@ function useStyleBasketItem() {
       flexDirection: 'row',
       borderWidth: 1,
       width: '100%',
-      height: '45%',
+      height: 100,
       shadowColor: 'rgba(0, 0, 0, 0.9)',
       shadowOpacity: 0.8,
       elevation: 6,
@@ -28,7 +28,7 @@ function useStyleBasketItem() {
     },
     price: {
       fontWeight: '600',
-      fontSize: 15,
+      fontSize: 18,
       color: COLORS.dark,
     },
     counter: {
@@ -39,11 +39,11 @@ function useStyleBasketItem() {
     image: {
       marginHorizontal: 10,
       backgroundColor: 'black',
-      marginTop: -30,
+      marginTop: -15,
 
       borderRadius: 100,
-      width: '35%',
-      height: '100%',
+      width: 100,
+      height: 100,
     },
   });
 

@@ -4,7 +4,7 @@ function useStyleBasketList () {
     const styles = StyleSheet.create({
         list:{
             marginTop: 40,
-            gap: 10,
+            gap: 20,
          
         }
     });
