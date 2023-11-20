@@ -17,6 +17,12 @@ class ProductSlice {
     item.inBasket = true;
   };
 
+  removeBasket = id => {
+    const item = this.productListAll.find(product => product.id === id);
+    item.inBasket = false;
+    item.count = 1;
+  };
+
   decrement = id => {
     const item = this.productListAll.find(product => product.id === id);
     if (item.count > 1) {

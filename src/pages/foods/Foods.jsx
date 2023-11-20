@@ -12,7 +12,7 @@ const Foods = ({route, navigation}) => {
   return (
     <Layout route={route} navigation={navigation}>
       <View style={styles.mainWrap}>
-        <Text style={styles.title}>Categories</Text>
+        <Text style={styles.title}>Categorías</Text>
 
         <View style={styles.listWrap}>
           <ButtonsList />

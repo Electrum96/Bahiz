@@ -3,11 +3,11 @@ import {observer} from 'mobx-react-lite';
 import useStyleButton from './useStyleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
-const Button = ({isActive, onPress}) => {
+const Button = ({isActive, onRemove, onAdd}) => {
   const styles = useStyleButton(isActive);
 
   return (
-    <TouchableOpacity style={styles.buttonWrap} onPress={onPress}>
+    <TouchableOpacity style={styles.buttonWrap} onPress={isActive ? onRemove : onAdd}>
       <View style={styles.titleWrap}>
       <Text style={styles.titleButton}>{isActive ? 'Borrar' : 'Agregar'}</Text>
       </View>
