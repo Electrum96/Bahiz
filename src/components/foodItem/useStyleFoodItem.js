@@ -11,14 +11,14 @@ function useStyleFoodItem() {
       shadowColor: 'rgba(0, 0, 0, 0.6)',
       shadowOpacity: 0.8,
       elevation: 6,
-      shadowRadius: 15 ,
-      shadowOffset : { width: 1, height: 13},
+      shadowRadius: 15,
+      shadowOffset: {width: 1, height: 13},
     },
     image: {
       flex: 1,
-      width:"100%",
-      height:"100%",
-      alignContent: 'center'
+      width: '100%',
+      height: '100%',
+      alignSelf: 'center',
     },
     infoWrap: {
       height: '43%',
@@ -27,20 +27,24 @@ function useStyleFoodItem() {
       backgroundColor: COLORS.accent,
       paddingHorizontal: 10,
       paddingTop: 10,
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
+      gap: 10,
     },
     title: {
+      color: COLORS.dark,
       fontWeight: '700',
-      fontSize: 13
+      fontSize: 15,
     },
     descr: {
-     fontSize: 10
+      color: COLORS.dark,
+      fontSize: 10,
     },
-    price :{
+    price: {
+      color: COLORS.dark,
       fontWeight: '600',
-      fontSize: 15,
-      marginBottom: 10
-    }
+      fontSize: 18,
+      marginBottom: 10,
+    },
   });
 
   return styles;
