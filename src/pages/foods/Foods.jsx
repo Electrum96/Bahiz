@@ -15,16 +15,12 @@ const Foods = ({route, navigation}) => {
         <Text style={styles.title}>Categories</Text>
 
         <View style={styles.listWrap}>
-        
           <ButtonsList />
-        
         </View>
 
         <View style={styles.listBox}>
-            <FoodList  navigation={navigation} />
+          <FoodList navigation={navigation} />
         </View>
-
-
       </View>
     </Layout>
   );

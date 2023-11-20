@@ -5,7 +5,7 @@ function useStyleButtonsList () {
         buttonsWrap:{
             flexDirection:"row",
             gap: 10,
-            marginVertical: 20
+            marginVertical: 10
         }
         
     });

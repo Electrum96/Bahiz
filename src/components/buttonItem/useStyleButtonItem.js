@@ -6,7 +6,7 @@ function useStyleButtonItem (isActive) {
         itemWrap: {
             overflow: 'hidden',
             width: 100,
-            height: 80,
+            height: 90,
             borderColor: COLORS.accentBg ,
             borderRadius: 5,
             borderWidth: 1,
@@ -16,7 +16,7 @@ function useStyleButtonItem (isActive) {
             marginLeft: 10,
             marginTop: 5,
             color: COLORS.dark,
-            fontSize: 13
+            fontSize: 14
         },
         image:{
             marginHorizontal: 10,

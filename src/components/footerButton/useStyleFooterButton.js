@@ -17,7 +17,9 @@ function useStyleFooterButton() {
     buttonTitle:{
       textAlign: 'center',
       color: COLORS.light,
-      fontSize: 18
+      fontWeight: '700',
+      fontSize: 20,
+      
     }
   });
 
