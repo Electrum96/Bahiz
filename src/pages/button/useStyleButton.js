@@ -11,7 +11,7 @@ function useStyleButton(isActive) {
 
     buttonWrap: {
       backgroundColor: isActive ? 'red' : COLORS.accentBg,
-      width: '50%',
+      width: '48%',
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'row',
@@ -24,10 +24,16 @@ function useStyleButton(isActive) {
       shadowRadius: 15,
       shadowOffset: {width: 1, height: 13},
     },
+
+    titleWrap:{
+     alignContent: 'flex-end'
+    },
     
     titleButton: {
       color: COLORS.light,
-      fontWeight: '600',
+      fontWeight: '400',
+      fontSize: 18,
+      marginLeft: 10
     },
   });
 

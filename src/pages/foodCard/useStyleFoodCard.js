@@ -6,14 +6,17 @@ function useStyleFoodCard() {
   const styles = StyleSheet.create({
     page: {
       justifyContent: 'space-between',
-      height: '100%',
+      height: '98%',
     },
     main: {
       marginTop: 20,
+      alignItems: 'center',
+      
     },
     image: {
       width: '100%',
-      height: '70%',
+      height: '65%',
+      borderRadius: 10
     },
     title: {
       fontSize: 20,
@@ -23,8 +26,7 @@ function useStyleFoodCard() {
 
     footer: {
       alignItems: 'center',
-      marginBottom: 20,
-      flexDirection: 'row',
+      flexDirection: 'row'  
     },
 
     priceWrap:{
@@ -33,7 +35,7 @@ function useStyleFoodCard() {
 
     price: {
         textAlign: 'center',
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: '600',
         color: COLORS.dark
     },
@@ -63,11 +65,17 @@ function useStyleFoodCard() {
     },
     blockInfo: {
         flexDirection: 'row',
+        marginTop: 20,
         justifyContent: 'space-between',
         gap: 20
     },
+    desc:{
+      fontSize: 15,
+      color: COLORS.dark
+    },
     description:{
-        width: '60%'
+        width: '60%',
+        gap: 10
     }
   });
 

@@ -37,9 +37,8 @@ const FoodCard = ({route, navigation}) => {
 
         <View style={styles.footer}>
           <View style={styles.priceWrap}>
-            <Text style={styles.price}>{'$ ' + price * count}</Text>
+            <Text style={styles.price}>{'€ ' + price * count}</Text>
           </View>
-
           <Button isActive={inBasket} onPress={() => addBasket(id)} />
         </View>
       </View>

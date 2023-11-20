@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 const Button = ({isActive, onPress}) => {
   const styles = useStyleButton(isActive);
-//   alert('render');
+
   return (
     <TouchableOpacity style={styles.buttonWrap} onPress={onPress}>
-      <Text style={styles.titleButton}>{isActive ? 'da' : 'net'}</Text>
+      <View style={styles.titleWrap}>
+      <Text style={styles.titleButton}>{isActive ? 'Borrar' : 'Agregar'}</Text>
+      </View>
       <View style={styles.iconWrap}>
-        <FontAwesomeIcon icon={'shopping-cart'} color="red" size={15} />
+        <FontAwesomeIcon icon={'shopping-cart'} color="red" size={20} />
       </View>
     </TouchableOpacity>
   );
