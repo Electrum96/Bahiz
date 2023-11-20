@@ -18,7 +18,7 @@ const events = [
     {
       image: require('../../image/Events/Coffe.png'),
       title: 'Degustación de café',
-      desc: 'Descubre un mundo de sabores en nuestra cata de café el 25 de noviembre a las 10:00, donde realizarás un viaje a los mejores cafetales y una master class de elaboración de cerveza..',
+      desc: 'Descubre un mundo de sabores en nuestra cata de café el 25 de noviembre a las 10:00, donde realizarás un viaje a los mejores cafetales y una master class de elaboración de cerveza.',
       id: 3
     },
     {
