@@ -1,30 +1,30 @@
 
 const tabs = [
   {
-    title: 'Магазин',
+    title: 'Comercio',
     route: 'Foods',
     id: 1,
   },
 
   {
-    title: 'Бронь',
+    title: 'Reserva',
     route: 'Broning',
     id: 2,
   },
 
   {
-    title: 'События',
+    title: 'Eventos',
     route: 'Events',
     id: 3,
   },
 
   {
-    title: 'Трансляции',
+    title: 'Transmisiones',
     route: 'Translations',
     id: 4,
   },
   {
-    title: 'Контакты',
+    title: 'Сontactos',
     route: 'Contacts',
     id: 5,
   },
